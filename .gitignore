@@ -1,0 +1,29 @@
+# Personal health data must never enter this public repository.
+# See docs/SAFETY_AND_PRIVACY.md: synthetic test data only.
+/dexcom-export/
+/tandem-export/
+*.csv
+!tests/**/fixtures/**/*.csv
+!**/synthetic/**/*.csv
+
+# Local databases and derived data
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
